@@ -19,7 +19,7 @@ The goal of this project is to deepen my understanding of Bitcoin's technical un
   - Set up a Bitcoin node (e.g., Bitcoin Core).
   - Query blockchain data (e.g., block height, transactions).
   - Test basic commands like `getblockchaininfo` or `getrawtransaction`.
-- **Files**: [week1/](week1/)
+- **Files**: [Summer of Bitcoin Week 1](https://github.com/ayushshrivastv/Summer-of-Bitcoin/tree/main/Summer%20of%20Bitcoin%20Week1)
 - **Notes**: Successfully connected to a regtest node and retrieved block data.
 
 ### Week 2: Building a P2SH-P2WSH Multisig Tx
