@@ -46,7 +46,7 @@ The goal of this project is to deepen my understanding of Bitcoin's technical un
   - Understand wallet descriptors and their syntax.
   - Create a descriptor wallet and generate addresses.
   - Test sending/receiving transactions with the wallet.
-- **Files**: [week4/](week4/)
+- **Files**: [Summer of Bitcoin Week 4](https://github.com/ayushshrivastv/Summer-of-Bitcoin/tree/main/Summer%20of%20Bitcoin%20Week4)
 - **Notes**: Explored the flexibility of descriptors over legacy wallets.
 
 ## Prerequisites
