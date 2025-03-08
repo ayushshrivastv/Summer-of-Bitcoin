@@ -52,7 +52,7 @@ The goal of this project is to deepen my understanding of Bitcoin's technical un
 ## Prerequisites
 To run or replicate the work in this repository, you’ll need:
 - [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/) (v24.0 or later)
-- rust
+- [Rust](https://www.rust-lang.org/) (1.60+ recommended) with Cargo
 - Testnet access (optional but recommended)
 - Git
 
