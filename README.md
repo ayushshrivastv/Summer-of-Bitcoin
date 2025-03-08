@@ -28,7 +28,7 @@ The goal of this project is to deepen my understanding of Bitcoin's technical un
   - Generate a multisig address.
   - Construct and sign a P2SH-P2WSH transaction.
   - Test the transaction on a testnet.
-- **Files**: [week2/](week2/)
+- **Files**: [Summer of Bitcoin Week 2](https://github.com/ayushshrivastv/Summer-of-Bitcoin/tree/main/Summer%20of%20Bitcoin%20Week2)
 - **Notes**: Learned the importance of script versioning and witness data.
 
 ### Week 3: Mining a Block
