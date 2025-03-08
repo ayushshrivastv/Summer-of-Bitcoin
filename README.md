@@ -37,7 +37,7 @@ The goal of this project is to deepen my understanding of Bitcoin's technical un
   - Implement a basic mining algorithm (e.g., proof-of-work).
   - Generate a valid block hash meeting the target difficulty.
   - Integrate with a testnet or regtest environment.
-- **Files**: [week3/](week3/)
+- **Files**: [Summer of Bitcoin Week 3](https://github.com/ayushshrivastv/Summer-of-Bitcoin/tree/main/Summer%20of%20Bitcoin%20Week3)
 - **Notes**: Adjusted difficulty for regtest to simulate mining successfully.
 
 ### Week 4: Descriptor Wallets
