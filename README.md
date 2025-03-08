@@ -10,3 +10,14 @@ This repository contains code, documentation, and resources related to the follo
 - **Week 4**: Descriptor Wallets
 
 The goal of this project is to deepen my understanding of Bitcoin's technical underpinnings and demonstrate practical skills in blockchain development.
+
+## Weekly Breakdown
+
+### Week 1: Interacting with a Bitcoin Node
+- **Objective**: Learn how to connect to and interact with a Bitcoin node using RPC calls or other methods.
+- **Tasks**:
+  - Set up a Bitcoin node (e.g., Bitcoin Core).
+  - Query blockchain data (e.g., block height, transactions).
+  - Test basic commands like `getblockchaininfo` or `getrawtransaction`.
+- **Files**: [week1/](week1/)
+- **Notes**: Successfully connected to a regtest node and retrieved block data.
