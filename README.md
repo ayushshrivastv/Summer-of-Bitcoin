@@ -21,3 +21,35 @@ The goal of this project is to deepen my understanding of Bitcoin's technical un
   - Test basic commands like `getblockchaininfo` or `getrawtransaction`.
 - **Files**: [week1/](week1/)
 - **Notes**: Successfully connected to a regtest node and retrieved block data.
+
+### Week 2: Building a P2SH-P2WSH Multisig Tx
+- **Objective**: Create a Pay-to-Script-Hash (P2SH) transaction with a Pay-to-Witness-Script-Hash (P2WSH) multisig script.
+- **Tasks**:
+  - Generate a multisig address.
+  - Construct and sign a P2SH-P2WSH transaction.
+  - Test the transaction on a testnet.
+- **Files**: [week2/](week2/)
+- **Notes**: Learned the importance of script versioning and witness data.
+
+### Week 3: Mining a Block
+- **Objective**: Simulate or perform the process of mining a Bitcoin block.
+- **Tasks**:
+  - Implement a basic mining algorithm (e.g., proof-of-work).
+  - Generate a valid block hash meeting the target difficulty.
+  - Integrate with a testnet or regtest environment.
+- **Files**: [week3/](week3/)
+- **Notes**: Adjusted difficulty for regtest to simulate mining successfully.
+
+### Week 4: Descriptor Wallets
+- **Objective**: Explore and implement Bitcoin descriptor wallets.
+- **Tasks**:
+  - Understand wallet descriptors and their syntax.
+  - Create a descriptor wallet and generate addresses.
+  - Test sending/receiving transactions with the wallet.
+- **Files**: [week4/](week4/)
+- **Notes**: Explored the flexibility of descriptors over legacy wallets.
+
+
+
+
+
