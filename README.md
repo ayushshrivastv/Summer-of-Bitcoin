@@ -8,3 +8,5 @@ This repository contains code, documentation, and resources related to the follo
 - **Week 2**: Building a P2SH-P2WSH Multisig Transaction
 - **Week 3**: Mining a Block
 - **Week 4**: Descriptor Wallets
+
+The goal of this project is to deepen my understanding of Bitcoin's technical underpinnings and demonstrate practical skills in blockchain development.
