@@ -48,7 +48,7 @@ fn main() -> bitcoincore_rpc::Result<()> {
     let info = rpc.get_blockchain_info()?;
     println!("{:?}", info);
 
-    // Create or load the wallet
+    //Create or load the wallet
     let wallets = list_wallet_dir(&rpc)?;
     if !wallets.contains(&"testwallet".to_string()) {
         let create_wallet: serde_json::Value =
@@ -63,7 +63,7 @@ fn main() -> bitcoincore_rpc::Result<()> {
         Auth::UserPass(RPC_USER.to_owned(), RPC_PASS.to_owned()),
     )?;
 
-    // Generate a new address
+    //Generate a new address
     let new_addr = wallet_rpc.get_new_address(None, None)?;
     println!("{:?}", new_addr);
     let checked_addr: bitcoincore_rpc::bitcoin::Address =
