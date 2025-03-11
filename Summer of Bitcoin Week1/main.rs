@@ -104,12 +104,12 @@ fn main() -> bitcoincore_rpc::Result<()> {
     assert!(sign_result.complete, "Signing incomplete");
     println!("Signed tx: {}", sign_result.hex);
 
-    // Send the transaction
+    //Send the transaction
     let txid: String =
         wallet_rpc.call("sendrawtransaction", &[json!(sign_result.hex)])?;
     println!("Txid: {}", txid);
 
-    // Write the txid to out.txt
+    //Write the txid to out.txt
     let mut file = File::create("out.txt")?;
     file.write_all(txid.as_bytes())?;
     Ok(())
