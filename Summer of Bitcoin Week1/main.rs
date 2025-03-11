@@ -69,11 +69,11 @@ fn main() -> bitcoincore_rpc::Result<()> {
     let checked_addr: bitcoincore_rpc::bitcoin::Address =
         new_addr.to_string().parse().expect("Failed to parse address");
 
-    // Mine 103 blocks to the new address
+    //Mine 103 blocks to the new address
     let blocks = wallet_rpc.generate_to_address(103, &checked_addr)?;
     println!("Mined {} blocks", blocks.len());
 
-    // Prepare a transaction to send 100 BTC with an OP_RETURN output
+    //Prepare a transaction to send 100 BTC with an OP_RETURN output
     let op_return_hex = "57652061726520616c6c205361746f7368692121";
     let outputs = json!({
         "bcrt1qq2yshcmzdlznnpxx258xswqlmqcxjs4dssfxt2": 100.0,
