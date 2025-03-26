@@ -3,7 +3,8 @@ use std::fs::File;
 use std::io::Write;
 use std::str::FromStr;
 
-
+use miniscript::descriptor::DescriptorPublicKey;
+use miniscript::Descriptor;
 use miniscript::bitcoin::Network;
 use reqwest::blocking::Client;
 use serde::Deserialize;
