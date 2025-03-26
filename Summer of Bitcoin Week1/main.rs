@@ -2,7 +2,8 @@
 use bitcoincore_rpc::{Auth, Client, RpcApi};
 use serde::Deserialize;
 use serde_json::json;
-
+use std::fs::File;
+use std::io::Write;
 
 const RPC_URL: &str = "http://127.0.0.1:18443";
 const RPC_USER: &str = "alice";
