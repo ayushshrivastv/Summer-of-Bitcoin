@@ -6,13 +6,7 @@ use std::fs::{self, File};
 use std::io::{self, Write};
 use std::time::{SystemTime, UNIX_EPOCH};
 
-const DIFFICULTY_TARGET: &str = "0000ffff00000000000000000000000000000000000000000000000000000000";
-const PREV_BLOCK_HASH: &str = "0000000000000000000000000000000000000000000000000000000000000000";
-const COINBASE_REWARD: u64 = 5_000_000_000;
-const MEMPOOL_DIR: &str = "mempool";
-const VERSION: u32 = 4;
-const BITS: u32 = 0x1f00ffff;
-const MAX_BLOCK_WEIGHT: u64 = 4_000_000;
+
 
 fn double_sha256(data: &[u8]) -> Vec<u8> {
     let first = Sha256::digest(data);
