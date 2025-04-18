@@ -16,14 +16,12 @@ struct AddressStats {
     #[serde(rename = "tx_count")]
     _tx_count: u64,
 }
-
 #[derive(Deserialize)]
 struct AddressInfo {
     address: String,
     chain_stats: AddressStats,
     mempool_stats: AddressStats,
 }
-
 fn main() -> Result<(), Box<dyn Error>> {
     let descriptor_str = "wpkh(tpubD6NzVbkrYhZ4XgiXtGrdW5XDAPFCL9h7we1vwNCpn8tGbBcgfVYjXyhWo4E1xkh56hjod1RhGjxbaTLV3X4FyWuejifB9jusQ46QzG87VKp/*)#adv567t2";
     let descriptor: Descriptor<DescriptorPublicKey> = Descriptor::from_str(descriptor_str)?;
@@ -42,7 +40,6 @@ fn main() -> Result<(), Box<dyn Error>> {
             eprintln!("Warning: Failed to fetch data for address {}. Skipping.", addr_str);
             continue;
         }
-
         let addr_info: AddressInfo = resp.json()?;
         let balance_satoshis = (addr_info.chain_stats.funded_txo_sum
             .saturating_sub(addr_info.chain_stats.spent_txo_sum))
@@ -51,7 +48,6 @@ fn main() -> Result<(), Box<dyn Error>> {
 
         total_satoshis += balance_satoshis;
     }
-
     let total_btc = total_satoshis as f64 / 100_000_000.0;
     let mut file = File::create("out.txt")?;
     writeln!(file, "{:.8}", total_btc)?;
